@@ -12,4 +12,4 @@ Build the slides with:
 gradle asciidoctorRevealJs
 ----
 
-After the successfully building the slides open `build/docs/asciidocRevealJs/slides.html` with your favorite browser.
+After successfully building the slides open `build/docs/asciidocRevealJs/slides.html` with your favorite browser.
