@@ -1,0 +1,15 @@
+= Slides Repository
+
+I use this repository to backup my presentations.
+
+== asciidoc-gradle-revealjs-example
+
+This folder contains a simple example based on gradle, asciidoc and revaljs.
+
+Build the slides with:
+
+----
+gradle asciidoctorRevealJs
+----
+
+After the successfully building the slides open `build/docs/asciidocRevealJs/slides.html` with your favorite browser.
