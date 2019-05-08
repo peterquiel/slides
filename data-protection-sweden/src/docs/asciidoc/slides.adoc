@@ -1,5 +1,5 @@
-= Example Deck
-Doc Writer <doc.writer@example.org>
+= Die spinnen die Schweden! - Datenschutz mal anders
+Peter Quiel <peter.quiel@gmail.com>
 2019-05-07
 
 :revnumber: {project-version}
@@ -7,12 +7,83 @@ Doc Writer <doc.writer@example.org>
 ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: src/main/java]
 
-== Introduction
+== 10 Dinge, die man in Schweden nicht geheimhalten kann
 
-[%step]
-* This is an example deck.
-* This deck teaches something.
-* We just haven't decided what that is yet.
+=== https://www.skatteverket.se/privat/folkbokforing/personnummerochsamordningsnummer.4.3810a01c150939e893f18c29.html[1. Die Personnummer]
+
+ * Eine 10 stellige nummer.
+ * Der Schlüssel zum Leben in Schweden - ohne PN -> nix!
+ * Wird für alles benutzt vom Handy-Vertrag zum Bankkonto.
+ * Bekommt jeder, der sich in Schweden registriert oder geboren wird.
+
+ * Auskunft: Einfach beim Skatteverket anrufen - Name reicht vielleicht schon.
+    - oder bei https://www.hitta.se[Hitta], https://www.ratsit.se[Ratsit], https://www.enrio.se[Enrio] ...
+
+
+[NOTE.speaker]
+--
+ * Ohne die PN geht gar. Hinweis auf den Versuch nen Handy-Vertrag abzuschließen.
+ * Unterschied zu aktiver und inaktiver PN -> aktiv ist mit verbuchten Tax-Einkommen.
+ * Der Auskunft ist anonym, aber nur persönlich oder per Telefon beim Skatteverket -> no mail.
+ * Auskunft geht nicht bei einer geschützten Identity
+--
+
+=== 2. Das Alter
+
+ * Die ersten 6 Stellen der PN sind das Geburtsdatum.
+ * Deshalb kann man das Alter unmöglich verheimlichen.
+
+ * Auskunft: Am einfachsten https://www.birthday.se[birthday.se]!
+
+[NOTE.speaker]
+--
+ * Format der Personnummer ist YYYYMMDD-XXXX, die letzten vier Stellen nennt man Kontrollsiffror.
+--
+
+=== 3. Adresse und Telefonnummer
+
+ * Telefonnummer müssen nicht registriert sein.
+ * Telefonnummer von minderjährigen sind meist auf die Eltern zugelassen.
+ * Auskunft: Das freundliche https://www.skatteverket.se/[Skatteverket.se] hilft weiter
+    - oder bei https://www.hitta.se[Hitta], https://www.ratsit.se[Ratsit], https://www.enrio.se[Enrio] ...
+
+[NOTE.speaker]
+--
+ * Vertragliche Telefonnummern sind automatisch registiert. Prepaid SIMs haben nen Pfand (zuletzt 100 SEK), bekommt man bei Registierung
+ zurück.
+ * Unternehmen haben meist einen anderen Firmensitz, auf den die Telefonnummer registiert ist.
+--
+
+=== 4. Beziehungsstatus
+
+ * Verheiratet oder Geschieden? Steht im schwedischen Heiratsregister.
+ * Auskunft: Das freundliche https://www.skatteverket.se/[Skatteverket.se] hilft weiter
+    - oder bei https://www.hitta.se[Hitta], https://www.ratsit.se[Ratsit], https://www.enrio.se[Enrio] ...
+
+[NOTE.speaker]
+--
+ * Prenuptial agreement oder Ehevertrag ist ebenfalls im Heiratsregister festgehalten.
+--
+
+=== 5. Familienmitglieder und Nachbarn
+
+ * Das freundliche Skatteverket hat dokumenten über die Familien
+
+
+
+  todo...
+
+
+
+== Wiso ist das so?
+
+
+This is because of Sweden's  'offentlighetsprincipen'  or 'principle of openness', part of the country's  famed press freedom law . All
+public records have to be preserved and made accessible to anyone who asks – and often you don't even need to say who you are or give a reason for the request – unless they fall under secrecy regulations.g
+
+
+The aim of this is to boost transparency within the society, facilitating greater equality and legality. Here's a (by no means exhaustive) list of some of the things you can't keep secret in Sweden.  [thelocal.se]
+
 
 == Speaker Notes
 
@@ -81,3 +152,20 @@ endpoint-url:: {endpoint-url}
 ----
 include::{build-gradle}[]
 ----
+
+== Fragen an Milla
+
+* Was ist einen geschützte Identity und wer ist das z.B.?
+* Darf ich deine Seiten von Ratsit usw. bei der Präsi zeigen?
+
+== Schwedische Seiten
+ * https://www.enrio.se[Enrio] - die schwedischen GelbenSeiten
+ * https://www.hitta.se[Hitta] - heisst `finden` und man findet auch!
+ * https://www.ratsit.se[Ratsit] - stellt Informationen über die Kreditwürdikeit bereit.
+
+
+== Demo Links
+
+ * https://www.birthday.se/sok?who=camila+engstr%f6m&where=trollh%e4ttan&searchmode=%23se-who&x=062[Meine Kusine auf Birthday.se]
+
+ * https://www.ratsit.se/19691028-Rigmor_Camilla_Engstrom_Trollhattan/mSdy36LIQC8iMOj7wMzmjNHV2nfY00avsS3_jKRGg2c#merInfo[Kusine auf Ratsit]
