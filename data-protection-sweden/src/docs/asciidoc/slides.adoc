@@ -1,24 +1,22 @@
-= Die spinnen die Schweden! - Datenschutz mal anders
+= Die spinnen die Schweden! Datenschutz mal anders
 Peter Quiel <peter.quiel@gmail.com>
-2019-05-07
+2019-05-16
 
 :revnumber: {project-version}
 :example-caption!:
 ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: src/main/java]
 
+
 == 10 Dinge, die man in Schweden nicht geheimhalten kann
 
-=== https://www.skatteverket.se/privat/folkbokforing/personnummerochsamordningsnummer.4.3810a01c150939e893f18c29.html[1. Die Personnummer]
+=== 1. Personnummer
 
- * Eine 10 stellige nummer.
- * Der Schlüssel zum Leben in Schweden - ohne PN -> nix!
- * Wird für alles benutzt vom Handy-Vertrag zum Bankkonto.
- * Bekommt jeder, der sich in Schweden registriert oder geboren wird.
-
- * Auskunft: Einfach beim Skatteverket anrufen - Name reicht vielleicht schon.
-    - oder bei https://www.hitta.se[Hitta], https://www.ratsit.se[Ratsit], https://www.enrio.se[Enrio] ...
-
+ * Eine 10 stellige Nummer
+ * Der Schlüssel zum Leben in Schweden
+ * Wird für alles benutzt, vom Handy-Vertrag zum Bankkonto
+ * Auskunft: https://www.skatteverket.se/[Skatteverket.se] anrufen
+ ** oder bei https://www.hitta.se[Hitta], https://www.ratsit.se[Ratsit], https://www.enrio.se[Enrio] ...
 
 [NOTE.speaker]
 --
@@ -26,146 +24,409 @@ ifndef::sourcedir[:sourcedir: src/main/java]
  * Unterschied zu aktiver und inaktiver PN -> aktiv ist mit verbuchten Tax-Einkommen.
  * Der Auskunft ist anonym, aber nur persönlich oder per Telefon beim Skatteverket -> no mail.
  * Auskunft geht nicht bei einer geschützten Identity
+ * Vereine und Unternehmen bekommmen eine Organisationsnummer. Hierfür ist aber das https://bolagsverket.se[bolagsverket.se] verantwortlich.
 --
 
-=== 2. Das Alter
+=== 2. Alter 
 
- * Die ersten 6 Stellen der PN sind das Geburtsdatum.
- * Deshalb kann man das Alter unmöglich verheimlichen.
-
- * Auskunft: Am einfachsten https://www.birthday.se[birthday.se]!
+ * PN hat das Format `YYMMDD-XXXX`
+ * Auskunft: https://www.birthday.se[birthday.se]!
 
 [NOTE.speaker]
 --
- * Format der Personnummer ist YYYYMMDD-XXXX, die letzten vier Stellen nennt man Kontrollsiffror.
+ * Format der Personnummer ist YYMMDD-XXXX, die letzten vier Stellen nennt man Kontrollsiffror.
 --
 
 === 3. Adresse und Telefonnummer
-
- * Telefonnummer müssen nicht registriert sein.
- * Telefonnummer von minderjährigen sind meist auf die Eltern zugelassen.
- * Auskunft: Das freundliche https://www.skatteverket.se/[Skatteverket.se] hilft weiter
-    - oder bei https://www.hitta.se[Hitta], https://www.ratsit.se[Ratsit], https://www.enrio.se[Enrio] ...
+ * Wohnhaft muss beim https://www.skatteverket.se/[Skatteverket.se] gemeldet werden
+ * Telefonnummer müssen nicht registriert sein
+ * Auskunft: https://www.skatteverket.se/[Skatteverket.se] hilft weiter
+ ** oder bei https://www.hitta.se[Hitta], https://www.ratsit.se[Ratsit], https://www.enrio.se[Enrio] ...
 
 [NOTE.speaker]
 --
  * Vertragliche Telefonnummern sind automatisch registiert. Prepaid SIMs haben nen Pfand (zuletzt 100 SEK), bekommt man bei Registierung
  zurück.
+ * Telefonnummer von minderjährigen sind meist auf die Eltern zugelassen.
  * Unternehmen haben meist einen anderen Firmensitz, auf den die Telefonnummer registiert ist.
 --
 
 === 4. Beziehungsstatus
 
- * Verheiratet oder Geschieden? Steht im schwedischen Heiratsregister.
- * Auskunft: Das freundliche https://www.skatteverket.se/[Skatteverket.se] hilft weiter
-    - oder bei https://www.hitta.se[Hitta], https://www.ratsit.se[Ratsit], https://www.enrio.se[Enrio] ...
+ * Verheiratet oder Geschieden? Steht im schwedischen Heiratsregister
+ * Auskunft: https://www.skatteverket.se/[Skatteverket.se] hilft weiter
+ ** oder bei https://www.hitta.se[Hitta], https://www.ratsit.se[Ratsit], https://www.enrio.se[Enrio] ...
 
 [NOTE.speaker]
 --
+ * Beziehungsstatus: Gift, registrerad partner, sambo, särbo
+ ** vem som ärver den som dör
+ ** vem som har rätt till saker och pengar om man skiljer sig eller separerar
+ ** hur man tar hand om gemensamma barn
+ ** hur man får adoptera barn
  * Prenuptial agreement oder Ehevertrag ist ebenfalls im Heiratsregister festgehalten.
 --
 
 === 5. Familienmitglieder und Nachbarn
 
- * Das freundliche Skatteverket hat dokumenten über die Familien
+ * https://www.skatteverket.se/[Skatteverket.se] weiß, wer sich eine Wohnung teilt
+ * Kenn ich die Adresse, weiß ich auch, wer in der Umgebung wohnt
 
+ * Auskunft: https://www.skatteverket.se/[Skatteverket.se] hilft weiter
+ ** oder bei https://www.hitta.se[Hitta], https://www.ratsit.se[Ratsit], https://www.enrio.se[Enrio] ...
 
-
-  todo...
-
-
-
-== Wiso ist das so?
-
-
-This is because of Sweden's  'offentlighetsprincipen'  or 'principle of openness', part of the country's  famed press freedom law . All
-public records have to be preserved and made accessible to anyone who asks – and often you don't even need to say who you are or give a reason for the request – unless they fall under secrecy regulations.g
-
-
-The aim of this is to boost transparency within the society, facilitating greater equality and legality. Here's a (by no means exhaustive) list of some of the things you can't keep secret in Sweden.  [thelocal.se]
-
-
-== Speaker Notes
-
-Press the `*s*` key to access speaker notes.
+=== 6. Hochschulabschluss
+ 
+ * Mal eben kurz den Uni-Abschluss im CV frisieren
+ * Keine gute Idee in Schweden
+ * https://www.uhr.se/[Universitets- och högskolerådet] gibt Auskunft, wer das Studium finanziert hat
+ * Auskunft: die jeweilige Hochschule
 
 [NOTE.speaker]
 --
-You've unlocked the super secret notes area.
-Neat huh?
+ * Universitets- och högskolerådet -> Hochschulbildungsrat -> falls man nicht weiß, wo jemand studiert hat.
 --
 
-== Source Code
+=== 7. Eigentum
 
-[source,java]
-.Java code from project
-----
-include::{sourcedir}/example/StringUtils.java[tags=contains,indent=0]
-----
+ * https://www.lantmateriet.se/[Lantmäteriet] führt ein Grundbuch
+ * Steuerlicher Wert und Hypothek wird ebenfalls im Grundbuch geführt
+ * Auskunft: direkt beim https://www.lantmateriet.se/[Lantmäteriet]
+** oder bei https://www.hitta.se[Hitta], https://www.ratsit.se[Ratsit], https://www.enrio.se[Enrio] ...
 
-This page was built by the following command:
+[NOTE.speaker]
+--
+ In Schweden wird eine Immobiliensteuer erhoben aktuell 0,75% des steurlichen Wertes, max 7 812SEK für ein "kleinhaus" - Eigentum.
+ Für Mietswohnungen 1 337SEK, höchstens 0,3% vom Steuerwert.
+--
 
- $ ./gradlew asciidoctor
+=== 8. Zugelassene Fahrzeuge
 
-== Blank screen
+ * https://transportstyrelsen.se[Transportstyrelsen] kennt Eigentümer von Fahrzeugen, Booten usw.
+ * Leasing oder Finanzierung muss ebenfalls gemeldet werden
+ * Fahrzeug wechselt das Kennzeichen niemals
+ * Auskunft: einfach https://www.transportstyrelsen.se/sv/vagtrafik/fordon/fordons-agaruppgift/[SMS an 72503 mit Kennzeichen] 
+ ** oder https://biluppgifter.se/[biluppgifter.se]
+ 
 
-You can press `*b*` or `*.*` to blank your current screen.
+[NOTE.speaker]
+--
+ * Leasing unter ein jahr muss nicht gemeldet werden
+ * SMS geht nur aus dem schwedischem Netz, aber es gibt ja die Onlineauskunft
+--
 
-Hit it again to bring it back.
+=== 9. Einkommen
 
-== Overview
+ * https://www.skatteverket.se/[Skatteverket] kennt das zu versteuernde Einkommen
+ * "financial porn" oder "tax porn"
+ * Auskunft: https://www.skatteverket.se/[Skatteverket.se] hilft weiter
+ ** oder bei https://www.ratsit.se[Ratsit],  https://www.upplysning.se/[Upplysning]...
 
-Press the `*esc*` key to get an overview of your slides.
+[NOTE.speaker]
+--
+ * Das genaue Einkommen sieht man nicht
+ * Max 5 Anfragen gleichzeichtig, wenn man zum Amt hingeht
+ * Dokumente kosten auf allen Platformen Geld - von 39 Sek für einzel Anfragen bis - ganz Scheweden ( 8 540 115 inkomstdeklarationer för 2018)
+ * Norwegen: Bedenken, dass es von Einbrechern ausgenutzt werden kann, hat die rechten dazu gesuchte Personen darüber informiert werden
 
-== Including documents from subdir
+ * Gender Pay Gap: https://faktenfinder.tagesschau.de/inland/genderpaygap-103.html[DE 21%] und https://sweden.se/society/gender-equality-in-sweden/[SE 12%] 
+--
 
-.include::subdir/_b.adoc[]
+=== 10. Schulden
 
-include::{includedir}/subdir/_b.adoc[]
+ * Steuerschulden verzeichnet das https://www.skatteverket.se/[Skatteverket]
+ * https://www.kronofogden.se/[Kronofogden] treibt z.B. Bußgeld und Geldstrafen ein
+ * Auskunft: https://www.kronofogden.se/[Kronofogden] 
 
-== Images
+[NOTE.speaker]
+--
+ 
+--
 
-[.thumb]
-image::sunset.jpg[scaledwidth=75%]
+== Und wie äußert sich das jetzt?
 
-== Attributes
+=== Meine Kusine auf Hitta.se
 
-Press the down arrow key to see the next sub-slide.
+image::search-person.png[scaledwidth=100%]
 
-=== Attributes Part 1
-.Built-in
-asciidoctor-version:: {asciidoctor-version}
-safe-mode-name:: {safe-mode-name}
-docdir:: {docdir}
-docfile:: {docfile}
-imagesdir:: {imagesdir}
+=== Kein genauer Treffer
 
-=== Attributes Part 2
-.Custom
-project-version:: {project-version}
-sourcedir:: {sourcedir}
-endpoint-url:: {endpoint-url}
+image::search-person-result.png[scaledwidth=100%]
+[NOTE.speaker]
+--
+Kein genauer treffer, aber es werden ja einige Möglichkeiten angeboten
+--
 
-== build.gradle
+=== !
+image::person.png[scaledwidth=100%]
 
-[source,groovy]
-----
-include::{build-gradle}[]
-----
+[NOTE.speaker]
+--
+ * Alles erklären und dann auf "Vem är nyinflyttad" klicken
+--
 
-== Fragen an Milla
+=== Neue Nachbarschaft
+image::new-neighbours.png[scaledwidth=100%]
 
-* Was ist einen geschützte Identity und wer ist das z.B.?
-* Darf ich deine Seiten von Ratsit usw. bei der Präsi zeigen?
+[NOTE.speaker]
+--
+--
+
+
+=== Neuer Nachbar
+image::a-new-neighbour.png[scaledwidth=100%]
+
+
+[NOTE.speaker]
+--
+Ein neuer Nachbar, .. zurück zu Camilla
+--
+
+=== !
+
+image::person.png[scaledwidth=100%]
+
+[NOTE.speaker]
+--
+ Hier sieht man, dass meine Cusine bald 50 wird,.. 
+ Ohh, dass will ich nicht vergessen. Man kann sich hier ne erinnerung senden lassen.
+--
+
+=== SMS Geburtstag-Erinnerung
+image::birthday-reminder.png[scaledwidth=100%]
+
+=== !
+image::lifestyle-map.png[scaledwidth=100%]
+
+[NOTE.speaker]
+--
+Das Wahlergebnis bezieht sich auf den Bezirk, der meist so ca. 1000-2000 Personen umfasst.
+--
+
+=== Streetview
+image::streeview.png[scaledwidth=100%]
+
+=== Autosuche anhand
+image::car-search.png[scaledwidth=100%]
+
+=== !
+image::car-model-data.png[scaledwidth=80%]
+
+=== !
+image::car-history.png[scaledwidth=90%]
+
+=== !
+image::car-services.png[scaledwidth=80%]
+
+=== !
+image::car-owner.png[scaledwidth=100%]
+
+
+== Echt jetzt?
+ 
+image::picard-face-palm.jpg[scaledwidth=100%]
+
+[NOTE.speaker]
+--
+ Man stelle sich das mal in DE vor. Geht das? Mit welcher Rechtsgrundlage? 
+ Gläsener Bürger?
+ Es geht um Gleichberechtigung. 
+ Wie sieht es hier mit der Schufa aus? - Ziemlich intranzparent.
+ Geolocation Scoring mit Infoscore aus Verl? - Unheimlich und intrazparent.
+--
+
+== Motivation
+
+ * Das https://www.regeringen.se/sa-styrs-sverige/det-demokratiska-systemet-i-sverige/offentlighetsprincipen/[offentlighetsprincipen] Teil des  https://sv.wikipedia.org/wiki/Tryckfrihetsf%C3%B6rordningen[Tryckfrihetsförordningen] von 1766
+ * Zensur verhindern, Meinungsfreiheit
+ * *Recht offizielle Dokumente einzusehen*
+ * Offiziellen Dokumente* müssen aufbewahrt und zugänglich gemacht werden
+ * Recht auf Anonymität
+
+// Bildidee: von https://www.thelocal.se/20161202/happy-250th-birthday-swedens-pioneering-free-press-act
+
+[NOTE.speaker]
+--
+ * Das Gesetzt ist gut 250 Jahre alt und somit das älteste dieser art.
+ * Anders Chydenius war ein finnischer Pfarrer, Politiker, Ökonom und bedeutender Philosoph des klassischen Liberalismus, der die Ideen der Aufklärung verbreitete
+ * Ziel war/ist Transparenz, Grundlage für Gleichberechtigung, Gleicheit
+ * Für die Papierform gibts sogar eine Gebührenverordnung. 1. 9 Seiten gratis, die 10. kostet 50SEK und jede weiter 2 SEK
+ * Anonymität heist, wenn ich Dokumente einsehe möchte, dann muss ich nicht mein Namen oder sonstige Informationen angeben.
+ * Viele Dokumente werden bereits auf https://www.regeringen.se/[regeringen.se] veröffentlicht. 
+--
+
+=== Was ist ein offizielles Dokument?
+
+* *Dokument*:  enthält Informationen in irgendeiner Form
+* *Offizielles Dokument* wurde eingereicht, angefordert oder wird von einer staatlichen Behörde aufbewahrt
+* *Geheime Dokumente*: Sind nicht offentlich einsehbar
+
+[NOTE.speaker]
+--
+ * An official document may be either text, a picture, a sound clip, a movie, a computer-readable file or any other piece of information. 
+    Like in other Nordic countries, the requester does not have to reveal his/her name, address or reason for request. 
+    
+ * Memos und Entwürfe werden nicht offiziell eingestuft.
+ * Geheime Dokumente können in Gerichtsverwahren "hinter verschlossener Tür" eingesehen werden.
+--
+
+=== Geheime Dokumente
+
+ . Nationale Sicherheit
+ . Nationale Währungssystem
+ . Verhinderung von Straftaten oder strafrechliche Verfolgung
+ . Kontrolltätigkeiten einer öffentlichen Institution 
+ . Ökonomischen Interessen einer öffentlichen Institution
+ . Schutz einer natürlichen Person
+ . Erhaltung von Planzen- und Tierarten
+
+[NOTE.speaker]
+--
+. Nationale Sicherheit ist gefährdet
+. Nationale Währungssystem ist gefährdet
+. Verhinderung von Straftaten oder strafrechliche Verfolgung ist gefährdet
+. Inspektions-, Kontroll- oder Aufsichtstätigkeiten einer öffentlichen Institution sind gefährdet
+. Ökonomischen Interessen einer öffentlichen Institution sind gefährdet
+. Schutz der persönlichen oder wirtschaftlichen Verhältnissen einer natürlichen Person ist gefährdet
+. Erhaltung von Planzen- und Tierarten ist gefährdet
+
+(Freedom of the Press Act, Chapter 2): Von mir übersetzt, nicht rechtlich fundiert
+Auskünfte von personen unter 15 oder psychischen Störung werden ebenfalls nicht gewährt
+--
+
+
+=== Und was ist mit GDPR?
+
+ * Firmen wie https://www.enrio.se[Enrio], https://www.ratsit.se[Ratsit],... 
+    haben zwei verschieden Datentypen:
+    . aus offiziellen Dokumenten 
+    . durch Benutzung ihrer Dienste
+ * GDPR deckt den zweiten Datentyp ab
+ * Platformen löschen all Daten freiwillig
+
+[NOTE.speaker]
+--
+ * Das Recht der Veröffentlichung der Daten haben sie durch ein sog. “publishing certificate” 
+ * Firmen mit so einem Zertifikate sind nicht gezwungen perönliche Daten zu löschen. 
+   Sie können das machen, es ist Ihre freiwillige Wahl.
+ * Zum zweiten Datentype gehören Daten wie: Password, IP, Supermarktketten, ICA und ihre Mitgliedschaft, 
+ * Vom 25.5.18 bs 31.7.18 hat Ratsit 500 dieser Anfragen erhalten.
+ * Der Behördenweg ist damit natürlich nicht betroffen.
+--
+
+== Und? Was hat man davon?
+
+=== Vieles ist Gut
+
+ * Geringe Korruption
+ * Absoluter Gender-Pay Gap bei 12%
+ * Hohe Happiness
+ * Höchste Gesundheitserwartung
+
+Ist die Offenheit die Ursache?
+
+[NOTE.speaker]
+--
+ * Alle skadinavischen Länder sind unter den ersten 7 im Korruptions index
+ * Absoluter Gender-Pay Gap in DE bei 21%
+ * Schweden auf Platz 9. wobei 1.Finnland, 2.Norway, 3. Denmark.. Deutschland auf Platz 15
+ * Höchste Gesundheitserwartung
+ * Kriminalität ist seit ca. 2000 stark gestiegen.
+--
+
+=== Schutz des Individuum vor der Gesellschaft
+
+[NOTE.speaker]
+--
+ * Muss ich das Individuum vor der Gesellschaft schützen?
+ * Misstraue ich der Gesellschaft, den Behörden, ist alles nur Abzocke?
+ * Die da oben packen sich die Taschen voll und der arme kleine Mann muss mal wieder die Zeche bezahlen?
+ * 
+--
+
+=== Schutz der Gesellschaft vor dem Individuum
+
+[NOTE.speaker]
+--
+ * Oder muss ich die Gesellschaft vor dem Individuum schützen?
+ * Vertraue ich den Behörden und der Allgemeinheit und sorge dafür, das Missbrauch aufgedeckt werden kann?
+ * Wie hätte sich Christian Wulf in so einer tranzparenten Gesellschaft verhalten?
+--
+
+
+=== Vertrauen
+
+image::trust-map.png[scaledwidth=140%]
+
+
+[NOTE.speaker]
+--
+
+Vertrauen ist das Fundament der skandinavischen Offenheit
+
+Wie viel Vertrauen habt ihr gengenüber eurer Familie, euren Kollegen die Ihr kennt, die,.. die Ihr nicht kennt? 
+Wie viel viel Vertrauen habt ihr gengenüber Fremden im Altag?
+
+Wir sind alle IT-ler und agiles Rahmenbedingungen brauchen vertrauen.
+You build it you run it - ohne Vertrauen? 
+ 
+--
+
+
 
 == Schwedische Seiten
- * https://www.enrio.se[Enrio] - die schwedischen GelbenSeiten
- * https://www.hitta.se[Hitta] - heisst `finden` und man findet auch!
- * https://www.ratsit.se[Ratsit] - stellt Informationen über die Kreditwürdikeit bereit.
+ * https://www.enrio.se[Enrio] - GelbenSeiten
+ * https://www.hitta.se[Hitta] - finden
+ * https://www.ratsit.se[Ratsit] oder https://www.upplysning.se/[Upplysning] - Kreditwürdikeit
+ * https://www.biluppgifter.se/[biluppgifter.se] - Fahrzeugauskuft
+ * https://www.birthday.se[birthday.se] - Geburtstage
+ 
+// == Quellen
+
+//  * https://www.thelocal.se/20180207/ten-secrets-you-cant-keep-in-sweden[ten-secrets-you-cant-keep-in-sweden]
+//  * https://www.thelocal.se/20180731/personal-data-how-to-get-it-removed-from-swedish-sites[personal-data-how-to-get-it-removed-from-swedish-sites]
+//  * https://www.thelocal.se/20161202/happy-250th-birthday-swedens-pioneering-free-press-act[happy-250th-birthday-swedens-pioneering-free-press-act]
+//  * https://www.regeringen.se/sa-styrs-sverige/det-demokratiska-systemet-i-sverige/offentlighetsprincipen/[offentlighetsprincipen]
+//  * https://www.ekonomifakta.se/fakta/skatter/skatt-pa-fastigheter-och-formogenhet/fastighetsskatt/[fastighetsskatt]
+//  * https://s3.amazonaws.com/happiness-report/2018/CH2-WHR-lr.pdf[World Happiness]
+//  * https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Healthy_life_years_statistics#Healthy_life_years_at_birth[Healthy_life_years_at_birth]
+//  * https://ourworldindata.org/trust[Our world in data - Trust]
+
+// == Fragen 
+// * Was ist einen geschützte Identity und wer ist das z.B.?
+// * Darf ich deine Seiten von Ratsit usw. bei der Präsi zeigen?
+
+// * Verheiratet: steuerliche Vorteile?
+// * Autos/Kennzeichen: Man ist nie anonym unterwegs. 
+//     Hat man das im kopf? Benehmt ihr euch dadurch im Verkehr?
+//     Wie häufig parkst du falsch oder fährst schneller?  
+
+// * Hat https://www.kronofogden.se/ ein verzeichnis aller Schulden usw.?
+//  ** Wie treibt Kronofogden das Geld ein?
+//  ** Kann jeder Anspruch anmelden? 
+//  ** 
+// * Wie sieht es mit Schuldenauskunft von anderen aus? Geht das einfach
+
+// * Was ist BankId, wie funktioniert das? Ist das statlich? 
+
+// Jag har några frågor om det. Skulle det finnas tid för en konversation idag eller imorgon?
+// Ich bin durch ein zufall soll ich bei einem meetup etwas das Datenoffenheit in schweden sperchen. 
+// Ich habe dazu einige fragen. Hättest heute oder morgen Zeit für ein Gespräch?
+
+// Was steht im Heiratsregister
+ 
+// Sind strafrechtlicher Einträge öffentlich?
+
+// == Demo Links
+
+//  * https://www.birthday.se/sok?who=camila+engstr%f6m&where=trollh%e4ttan&searchmode=%23se-who&x=062[Meine Kusine auf Birthday.se]
+
+//  * https://www.ratsit.se/19691028-Rigmor_Camilla_Engstrom_Trollhattan/mSdy36LIQC8iMOj7wMzmjNHV2nfY00avsS3_jKRGg2c#merInfo[Kusine auf Ratsit]
 
 
-== Demo Links
+//  == Ideen 
 
- * https://www.birthday.se/sok?who=camila+engstr%f6m&where=trollh%e4ttan&searchmode=%23se-who&x=062[Meine Kusine auf Birthday.se]
-
- * https://www.ratsit.se/19691028-Rigmor_Camilla_Engstrom_Trollhattan/mSdy36LIQC8iMOj7wMzmjNHV2nfY00avsS3_jKRGg2c#merInfo[Kusine auf Ratsit]
+//   * Jedes der einzelnen Dinge mit bildern hinterlegen
+//   * blau gelbes desing oder schweden flagge im hintergrund?
+//   * Demo: live oder als Slides, .. wenn slides, wie kann ich das sinnvoll machen?
+//  ** Einmal camilla auf hitta, übersichts karte zeigen 
