@@ -1,12 +1,14 @@
+ifndef::imagesdir[:imagesdir: images]
+ifndef::sourcedir[:sourcedir: src/main/java]
+:customcss: css/custom.css
+
 = Die spinnen die Schweden! Datenschutz mal anders
 Peter Quiel <peter.quiel@gmail.com>
 2019-05-16
 
-:revnumber: {project-version}
-:example-caption!:
-ifndef::imagesdir[:imagesdir: images]
-ifndef::sourcedir[:sourcedir: src/main/java]
-
+include::{includedir}/include-print-styles.adoc[]
+include::{includedir}/footer.adoc[]
+include::{includedir}/click-mouse-navigation.adoc[]
 
 == 10 Dinge, die man in Schweden nicht geheimhalten kann
 
@@ -20,11 +22,11 @@ ifndef::sourcedir[:sourcedir: src/main/java]
 
 [NOTE.speaker]
 --
- * Ohne die PN geht gar. Hinweis auf den Versuch nen Handy-Vertrag abzuschließen.
+ * Ohne die PN geht gar. 
  * Unterschied zu aktiver und inaktiver PN -> aktiv ist mit verbuchten Tax-Einkommen.
  * Der Auskunft ist anonym, aber nur persönlich oder per Telefon beim Skatteverket -> no mail.
- * Auskunft geht nicht bei einer geschützten Identity
  * Vereine und Unternehmen bekommmen eine Organisationsnummer. Hierfür ist aber das https://bolagsverket.se[bolagsverket.se] verantwortlich.
+ * Auskunft geht nicht bei einer geschützten Identity
 --
 
 === 2. Alter 
@@ -147,7 +149,7 @@ ifndef::sourcedir[:sourcedir: src/main/java]
 
 === Meine Kusine auf Hitta.se
 
-image::search-person.png[scaledwidth=100%]
+image::search-person.png[scaledwidth=90%]
 
 === Kein genauer Treffer
 
@@ -174,7 +176,7 @@ image::new-neighbours.png[scaledwidth=100%]
 
 
 === Neuer Nachbar
-image::a-new-neighbour.png[scaledwidth=100%]
+image::a-new-neighbour.png[scaledwidth=90%]
 
 
 [NOTE.speaker]
@@ -184,7 +186,7 @@ Ein neuer Nachbar, .. zurück zu Camilla
 
 === !
 
-image::person.png[scaledwidth=100%]
+image::person.png[scaledwidth=90%]
 
 [NOTE.speaker]
 --
@@ -196,7 +198,7 @@ image::person.png[scaledwidth=100%]
 image::birthday-reminder.png[scaledwidth=100%]
 
 === !
-image::lifestyle-map.png[scaledwidth=100%]
+image::lifestyle-map.png[scaledwidth=90%]
 
 [NOTE.speaker]
 --
@@ -373,6 +375,14 @@ You build it you run it - ohne Vertrauen?
 --
 
 
+=== !
+
+[quote, Janerik Larsson, @janeriklarsson]
+____
+Sweden is a small country and our tradition of high trust is probably impossible to export.
+____
+
+
 
 == Schwedische Seiten
  * https://www.enrio.se[Enrio] - GelbenSeiten
@@ -430,3 +440,4 @@ You build it you run it - ohne Vertrauen?
 //   * blau gelbes desing oder schweden flagge im hintergrund?
 //   * Demo: live oder als Slides, .. wenn slides, wie kann ich das sinnvoll machen?
 //  ** Einmal camilla auf hitta, übersichts karte zeigen 
+

@@ -33,7 +33,21 @@ revealjs {
   }
 }
 
+asciidoctorRevealJs {
+  revealjsOptions { 
+    controls = true
+  }
+}
+
 asciidoctor {
     logDocuments = true
     baseDirFollowsSourceDir()
- }
+}
+
+// Don't know if there is a special 'include custom css' task/config for gradle plugin
+// Doing it the pragmatic way!
+task copyCss(type: Copy) {
+    from 'src/docs/asciidoc/css'
+    into "$buildDir/docs/asciidocRevealJs/css"
+}
+asciidoctorRevealJs.dependsOn << tasks.copyCss
