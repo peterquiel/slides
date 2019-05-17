@@ -397,6 +397,7 @@ Auskünfte von personen unter 15 oder psychischen Störung werden ebenfalls nich
 
  * Geringe Korruption
  * Absoluter Gender-Pay Gap bei 12%
+ * Geringsten Verkehrstoten in der EU
  * Hohe Happiness
  * Höchste Gesundheitserwartung
 
@@ -409,12 +410,15 @@ Alle skandinavischen Länder sind unter den ersten 7 im Korruptions index
 
 Absoluter Gender-Pay Gap in DE bei 21%
 
+In 2018 waren es 324 tot insgesamt, 77 bei überholvorgängen. 25 Tote pro Millionen Einwohner in DE sind es 38 Tote
+Brandenburg 57 und Sachsen 63 pro Millionen Einwohner. 
+
 Happiness: Schweden auf Platz 9. wobei 1.Finnland, 2.Norway, 3. Denmark.. Deutschland auf Platz 15
 
 Höchste Gesundheitserwartung - Lebensjahre, in denen ich gesund bin.
 --
 
-=== Schutz des Individuum vor der Gesellschaft
+=== Schutz des Individuums vor der Gesellschaft
 
 [NOTE.speaker]
 --
@@ -492,6 +496,8 @@ ____
  * https://s3.amazonaws.com/happiness-report/2018/CH2-WHR-lr.pdf[World Happiness]
  * https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Healthy_life_years_statistics#Healthy_life_years_at_birth[Healthy_life_years_at_birth]
  * https://ourworldindata.org/trust[Our world in data - Trust]
+ * https://www.transportstyrelsen.se/sv/vagtrafik/statistik/Olycksstatistik/officiell-statistik-polisrapporterad/[Unfallstatisiken]
+ * https://ec.europa.eu/germany/news/20180410-strassensicherheit_de[strassensicherheit]
 
 // == Fragen 
 // * Was ist einen geschützte Identity und wer ist das z.B.?
