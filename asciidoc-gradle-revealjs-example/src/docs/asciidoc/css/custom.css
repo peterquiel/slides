@@ -1,0 +1,23 @@
+
+.footer {
+  position: absolute;
+  display: table;
+  width: 100%;
+  bottom: 0;
+}
+     
+.footer span {
+  display: table-cell;
+  padding: 0px 100px 10px;
+    
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 70%;
+}
+    
+.footer span:nth-of-type(1) {
+  text-align: left;
+}
+.footer span:nth-last-child(1) {
+  text-align: right;
+}

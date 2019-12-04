@@ -1,11 +1,17 @@
+:revnumber: {project-version}
+:example-caption!:
+:imagesdir: {docdir}/src/docs/asciidoc/images
+:sourcedir: {docdir}/src/main/java
+:customcss: css/custom.css
+
 = Example Deck
 Doc Writer <doc.writer@example.org>
 2019-05-07
 
-:revnumber: {project-version}
-:example-caption!:
-ifndef::imagesdir[:imagesdir: images]
-ifndef::sourcedir[:sourcedir: src/main/java]
+
+include::{includedir}/include-print-styles.adoc[]
+include::{includedir}/footer.adoc[]
+include::{includedir}/click-mouse-navigation.adoc[]
 
 == Introduction
 
@@ -74,10 +80,3 @@ imagesdir:: {imagesdir}
 project-version:: {project-version}
 sourcedir:: {sourcedir}
 endpoint-url:: {endpoint-url}
-
-== build.gradle
-
-[source,groovy]
-----
-include::{build-gradle}[]
-----
