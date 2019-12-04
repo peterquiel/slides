@@ -1,0 +1,27 @@
+==  
+
+
+
+=== Road Map
+Stabilize web-UI automation, the goal: compete with Selenium and Cypress.
+
+Graal migration
+
+Improve generated documentation, support for better “inline” doc native steps
+
+Karate Roadmap: https://github.com/intuit/karate/projects/3
+
+=== Vision
+
+[.step]
+Become the best API testing tool
+
+[.step]
+Become the best test-automation tool
+
+=== How to ask
+
+Stackoverflow - 1,375 questions has been answered
+
+https://github.com/intuit/karate[Karate Readme.md]  is a "complete" doc
+

@@ -1,0 +1,112 @@
+=== What is Karate?
+
+[quote, Peter Thomas]
+Karate is the only open-source tool to combine API test-automation, [...]. The BDD syntax popularized by Cucumber is language-neutral, and easy for even non-programmers.
+
+=== In short
+
+It's an external DSL for Web-Services Testing using a Gherkin like syntax.
+
+[NOTE.speaker]
+--
+* External means, it's a DSL. 
+* true DSL need tool support, syntax highlighting. That's the part i'm working on, hope to finish that soon. 
+* Karate doesn't have true IDE support - yet. 
+* And since 0.9.4 - web testing via web drivers are supported as well.
+--
+
+=== Some Facts
+
+* Started as an internal project in Dec 2016 at https://www.intuit.com/[Intuit] by Peter Thomas
+* Went open source September 2017
+* 2.6k Github stars
+* almost no open bugs
+* VS-Code replaced a javafx application as Karate-IDE
+* Current stable version 0.9.4 
+
+[NOTE.speaker]
+--
+* In 0.9.3 (?) a javafx ui for debugging was integrated. This has been replaced by a visual studio code plugin.
+* Full language server support is planned.
+* It's sad to say that it's almost a one man show.
+* Version 1.0.0? .. I will come to that back later.
+--
+
+=== ThoughtWorks Tech. Radar
+
+[quote, https://www.thoughtworks.com/de/radar/languages-and-frameworks/karate]
+image::tech-radar.png[scaledwidth=120%]
+
+[NOTE.speaker]
+--
+* Made this in 2 years.
+--
+
+
+=== Karate, this isn't about material arts?
+
+[.step, role="no-bullet"]
+* In the days where computers were new..
+* ...there was a game called *Karateka* with simple graphics...
+* ...seeing *Karateka* for the first time in the 80's was a career-defining moment for him...
+* ...in Dec 2016, no popular software was called Karate...
+* ...so, lets called it Karate and use a cool logo...
+* ...after a https://twitter.com/jmechner/status/838437530525659136[chat with Jordan], if he could use his logo...
+* ...and he answered: "for a good nonprofit cause, I think the lawyers will look the other way..."
+
+[NOTE.speaker]
+--
+* Karateka was made by Jordan Mechner, he made Prince of Persia, Karateka, The Last Express, Templar.
+--
+
+[%notitle]
+=== Karate Logo
+image::karate.png[scaledwidth=120%]
+
+
+=== BDD, Gherkin? How does this fit together?
+
+[quote, Jack Kinsella, https://www.jackkinsella.ie/]
+Cucumber has its uses, principally as a high level analysis tool [...]. 
+Cucumber, as used by the majority of Rails programmers, is no more than a clumsy wrapper over basic integration tests.
+
+[NOTE.speaker]
+--
+* Dieses Zitat ist als aus vielen ausgewählt.
+* Zeigt wie schwer ist gute verständliche Tests zu schreiben.
+--
+
+
+// === Why cucumber? 
+// [%step]
+// * Free IDE plug-ins
+// * Ready to use integration
+// * BDD-flavoured Given-When-Then syntax for free 
+// * Karate used CucumberJVM until 0.9
+
+
+// https://hackernoon.com/yes-karate-is-not-true-bdd-698bf4a9be39
+
+// why the name and the logo, 
+// how does it look like, 
+// is it BDD? Why not? 
+// What can it be used for? Web API, json, xml, Web
+// Common with cucumber?
+
+
+// Why another tool, why a dsl?
+
+// Motivation... shape the perspective. You can of cause use RestAssured or xyz to do this, but tests are fragile.. 
+// They need a careful design
+
+// “Here are the 2 Rules of Peter Quiel Karate. Rule Number 1: ‘Karate for app quality only.’ Rule Number 2: ‘First learn rule number 1.’”
+
+// "It's okay to lose to opponent, it's never okay to lose to fear."
+
+// Die perspective eines Juniors müssen wir bei dem was wir schaffen im auge behalten.. 
+
+
+[%notitle]
+=== Ready to start?
+
+

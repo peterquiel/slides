@@ -1,0 +1,12 @@
+== Yellow Belt
+
+".. gives hope to a learner that he is actually learning and practicing at his best."
+
+[quote, Mr Miyagi]
+First learn stand, then learn fly! Nature rule Daniel son, not mine.
+
+
+[%notitle]
+=== demo time
+
+link:vscode://file/{groovytest}/karate/yellow.feature[karate/yellow.feature]

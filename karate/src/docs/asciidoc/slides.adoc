@@ -1,0 +1,29 @@
+:revnumber: {project-version}
+:example-caption!:
+:source-highlighter: highlightjs
+:revealjs_width: "90%"
+:imagesdir: {docdir}/src/docs/asciidoc/images
+:groovytest: {docdir}/src/test/groovy
+:customcss: css/custom.css
+:revealjs_plugin_pdf: enabled
+
+= Getting Black Belt in Karate
+Peter Quiel <peter.quiel@gmail.com>
+2019-12-05
+
+include::{includedir}/click-mouse-navigation.adoc[]
+
+
+== Me
+
+[quote, Mr. Myagi]
+We make sacred pact. I promise teach karate to you, you promise learn. I say, you do, ask questions.
+
+
+
+// include::{includedir}/subdir/_intro.adoc[]
+include::{includedir}/subdir/_white.adoc[]
+
+include::{includedir}/subdir/_yellow.adoc[]
+
+include::{includedir}/footer.adoc[]

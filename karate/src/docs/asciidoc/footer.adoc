@@ -1,0 +1,22 @@
+++++
+<div id="pquiel-footer" class="footer">
+    <span class="element"><a href="https://jug-pb.gitlab.io/">jug-pb.gitlab.io</a></span>
+    <span class="element">@peter_quiel</span>
+</div>
+<script type="text/javascript">
+    window.addEventListener("load", function() {
+        var revealDiv = document.querySelector("body div.reveal");
+        var footer = document.getElementById("pquiel-footer");
+        revealDiv.appendChild(footer);
+
+        // Good to know that Reveal is available after window has been loaded..
+        // Reveal.configure({
+        //     width: "90%"
+        // });
+        
+        // Reveal.addEventListener( 'ready', function( event ) {
+        //     window.alert("ready");
+        // } );
+    });
+</script>
+++++
