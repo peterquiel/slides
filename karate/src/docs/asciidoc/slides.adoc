@@ -20,10 +20,11 @@ include::{includedir}/click-mouse-navigation.adoc[]
 We make sacred pact. I promise teach karate to you, you promise learn. I say, you do, ask questions.
 
 
-
-// include::{includedir}/subdir/_intro.adoc[]
+include::{includedir}/subdir/_intro.adoc[]
 include::{includedir}/subdir/_white.adoc[]
-
 include::{includedir}/subdir/_yellow.adoc[]
+include::{includedir}/subdir/_orange.adoc[]
+include::{includedir}/subdir/_green.adoc[]
+
 
 include::{includedir}/footer.adoc[]

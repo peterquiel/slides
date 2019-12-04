@@ -5,77 +5,101 @@ Feature: The yellow belt gives hope to a learner that he is actually learning an
     And def num = 5
     * print 'Num is ', num, '\n'
     * print 'Print takes js expressions as well: ', color + num
-    * print 'Error logging could be improved; rubbish in expression leads to empty string:', doesNoExists + 10
+    * print 'Addition', num + 5
+    * print 'Rubbish in expression leads to empty string:', doesNoExists + 10
     * print 'Default value from karate-config.js: ', someDefaultConfig
+    * text multiLine =
+    """
+        this is a 
+        multi line text
+    """
+    * print multiLine
 
+    # Assert evaluates expressions..
     Then assert color + num == 'red 5'
 
-  Scenario: Given, When and Then is obsolete
+
+
+
+
+
+  Scenario: Given, When, Then And But is optional
     * print 'The given, when, then blocks are ignored in the end'
     * print 'You can leave them out'
-  
+
+
+
+
+
   Scenario: Basic expressions
     * def one = 1
     * def two = 2
     * def three = one + two
     * assert 4 > three
 
+
+
+
+
+
+
+
   Scenario: Native JSON support 
-   * def json = {this: "is", a:"json", "object": true }
-   * match json.this == "is"
-   
-  Scenario: CSV file to json
-    * def bestMovies = read('best-movies.csv')
-    * print bestMovies
-    * def names = get bestMovies $[*].name
-    * print names
-    
+   * def json = { full: "json", is:"supported", as: ["you", "can", "see"]}
+   * match json.is == "supported"
 
 
-  Scenario Outline: inline json
-    * match __row == { first: 'hello', second: { a: 1 } }
-    * match first == 'hello'
-    * match second == { a: 1 }
-
-    Examples: Just a view examples
-      | first | second!  |
-      | hello | { a: 1 } |
-
-  Scenario: Matching text
-    * def yourResponse = "12:10:33.960 [print] Kyc Status changed from NotStarted to Accepted.Reason: Output Address AddressLine : 6927 14TH AVE"
-    * match yourResponse contains "NotStarted to Accepted"
-    * match yourResponse !contains "does not contain"
-    * assert new RegExp("NotStarted to Accepted").test(yourResponse)
 
 
-  Scenario Outline: Reading examples from csv. Placeholders like <name> and <likes> will be replaced by example data.
-    * print '<name>'
-    * print '<likes>'
-    Examples:
-      | read('data.csv') |
 
 
-#  Scenario: Documentary string..
-#  This is is currently - 0.9.5.RC3 - a bug and doesn't terminate.
-#    Given url "https://www.google.de"
-#      """
-#      This is text to document your scenario in detail.
-#      """
-#    When method get
-#    Then status 200
 
-  Scenario: Documentary string  whit karate embed
-    Given url "https://www.google.de"
-    * karate.embed('This is text to document your scenario in detail.', 'text/plain')
-    When method get
-    Then status 200
 
-  # following scenarios reproduce test result listing bug
-  Scenario: First 'scenario' with single quotes in title
-    * print 1
+  Scenario: Embbed expressions in json
+   * def anArray = ["you", "can", "see"]
+   * def json = { full: "json", is:#( "support" + 3 + "d"), as: #(anArray)}
+   * match json.as == anArray
+   * match json.is == "support3d"
 
-  Scenario: Second 'scenario' with single quotes in title
-    * print 1 + 1
 
-  Scenario: First scenario without quotes in title
-    * print 1 + 1 + 1
+
+
+
+
+
+
+  Scenario: Tables offer an elegant way to create json arrays
+    Given table bikes
+      | placement | name                          |
+      | 1         | "Big Trouble in Little China" |
+      | 2         | "The Karate Kid"              |
+      | 3         | "Police Story"                |
+
+    Then match bikes ==
+    """
+    [
+      {placement: 1, name: "Big Trouble in Little China" }
+      {placement: 2, name: "The Karate Kid"              }
+      {placement: 3, name: "Police Story"                }
+    ]
+    """
+
+
+
+
+
+
+
+
+
+
+  Scenario Outline: Feeding a scenario by a table with values <placement>: <name>
+    * print __row 
+    * print "current movie:", name
+    * assert 0 < placement && placement < 4
+
+    Examples: Every Outline needs an example table
+      | placement | name                          |
+      | 1         | "Big Trouble in Little China" |
+      | 2         | "The Karate Kid"              |
+      | 3         | "Police Story"                |

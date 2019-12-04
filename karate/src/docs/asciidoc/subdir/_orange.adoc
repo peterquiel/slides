@@ -1,0 +1,20 @@
+== Orange Belt
+".. orange is representation of growing strength of sun, orange belt also symbolizes improvement in individual’s skills."
+
+[quote, Mr Miyagi]
+“Daniel: You think you could break a log like that?
+Miyagi: Don’t know. Never been attacked by a tree.”
+
+[NOTE.speaker]
+--
+Have the right tools for the job..
+--
+
+
+=== next lesson
+
+link:vscode://file/{groovytest}/karate/orange.feature[karate/orange.feature]
+[source]
+----
+
+----

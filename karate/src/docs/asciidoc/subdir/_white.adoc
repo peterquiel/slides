@@ -1,4 +1,3 @@
-
 == White Belt Lessons
 
 ".. representation of very initial level of karate"
@@ -24,8 +23,11 @@ include::{groovytest}/karate/white.feature[tags=structure,indent=0]
 ** Debug support 
 ** Syntax Highlighting - coming soon!
 
-
-[%notitle]
-=== demo time
+=== next lesson
 
 link:vscode://file/{groovytest}/karate/white.feature[karate/white.feature]
+
+[source]
+----
+
+----

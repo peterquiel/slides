@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "type": "karate",
+        "name": "Karate (debug): Gradle",
+        "request": "launch",
+        "feature": "${command:karateRunner.getDebugFile}",
+        // see https://github.com/intuit/karate/wiki/Debug-Server#karate-options for options
+        "karateOptions": "",
+        "karateCli": "gradle compileTestJava -b build.gradle karateExecute -DmainClass=com.intuit.karate.cli.Main --args='-d'"
+    }
+    ]
+}

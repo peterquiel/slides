@@ -1,0 +1,123 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    ext {
+        // karateVersion = '1.0.0'
+       karateVersion = '0.9.5.RC4'
+    }
+}
+
+plugins {
+    id 'scala'
+    id 'groovy'
+    id 'java'
+
+    id 'org.asciidoctor.jvm.base' version "2.2.0"
+    id 'org.asciidoctor.jvm.convert' version "2.2.0"
+    id 'org.asciidoctor.jvm.revealjs' version "2.2.0"
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    mavenLocal()
+    maven { url 'http://rubygems-proxy.torquebox.org/releases' } 
+}
+
+revealjs {
+  version = '2.0.0' 
+
+  templateGitHub {  
+    organisation = 'hakimel'
+    repository = 'reveal.js'
+    tag = '3.8.0'
+  }
+}
+
+asciidoctor {
+    logDocuments = true
+    baseDirFollowsSourceDir()
+}
+
+asciidoctorRevealJs {
+  revealjsOptions { 
+      // see https://asciidoctor.github.io/asciidoctor-gradle-plugin/development-2.0/user-guide/#_reveal_js_options for options
+  }
+}
+
+// Don't know if there is a special 'include custom css' task/config for gradle plugin
+// Doing it the pragmatic way!
+task copyCss(type: Copy) {
+    from 'src/docs/asciidoc/css'
+    into "$buildDir/docs/asciidocRevealJs/css"
+}
+
+asciidoctorRevealJs.dependsOn << tasks.copyCss
+ext.junitPlatformVersion = '1.4.2'
+ext.junitJupiterVersion = '5.4.2'
+ext.jqwikVersion = '1.1.2'
+
+dependencies {
+    implementation 'org.scala-lang:scala-library:2.12.8'
+    implementation 'org.codehaus.groovy:groovy-all:2.5.4'
+    testCompile "com.intuit.karate:karate-junit5:${karateVersion}"
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.4.2")
+    testCompile "com.intuit.karate:karate-apache:${karateVersion}"
+    testCompile("com.intuit.karate:karate-gatling:${karateVersion}")
+    testCompile("com.intuit.karate:karate-mock-servlet:${karateVersion}")
+    testCompile("net.masterthought:cucumber-reporting:3.8.0")
+    // aggregate jqwik dependency
+    testCompile "net.jqwik:jqwik:${jqwikVersion}"
+
+    testCompile"io.gatling:gatling-app:3.0.2"
+    testCompile"io.gatling.highcharts:gatling-charts-highcharts:3.0.2"
+    testCompile"com.intuit.karate:karate-gatling:${karateVersion}"
+}
+
+test {
+    useJUnitPlatform()
+
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+
+    // pull karate options into the runtime
+    systemProperty "karate.options", System.properties.getProperty("karate.options")
+    // pull karate env into the runtime
+    systemProperty "karate.env", System.properties.getProperty("karate.env")
+    
+    // ensure tests are always run
+    outputs.upToDateWhen { false }
+}
+
+sourceSets {
+
+    test {
+        resources {
+            srcDirs = ['src/test/resources','src/test/groovy','src/test/scala']
+        }
+    }
+}
+
+task gatlingRun(type: JavaExec) {
+    group = 'Web Tests'
+    description = 'Run Gatling Tests'
+
+    new File("${buildDir}/reports/gatling").mkdirs()
+
+    classpath = sourceSets.test.runtimeClasspath
+
+    main = "io.gatling.app.Gatling"
+    args = [
+            '-s', 'com.github.peterquiel.karate.experiment.GatlingDemo',
+            '-rf', "${buildDir}/reports/gatling"
+    ]
+    systemProperties System.properties
+}
+
+task karateExecute(type: JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    main = System.properties.getProperty('mainClass')
+}

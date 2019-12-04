@@ -1,0 +1,15 @@
+== Green Belt
+".. is awarded to intermediate students who are refining their kills"
+
+[quote, Mr Miyagi]
+Here 2 Rules of Peter Quiel Karate: +
+1. Karate for json assertions +
+2. First learn rule number 1
+
+=== next lesson
+
+link:vscode://file/{groovytest}/karate/green.feature[karate/green.feature]
+[source]
+----
+
+----

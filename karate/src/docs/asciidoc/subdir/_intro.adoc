@@ -64,17 +64,17 @@ image::tech-radar.png[scaledwidth=120%]
 image::karate.png[scaledwidth=120%]
 
 
-=== BDD, Gherkin? How does this fit together?
+// === BDD, Gherkin? How does this fit together?
 
-[quote, Jack Kinsella, https://www.jackkinsella.ie/]
-Cucumber has its uses, principally as a high level analysis tool [...]. 
-Cucumber, as used by the majority of Rails programmers, is no more than a clumsy wrapper over basic integration tests.
+// [quote, Jack Kinsella, https://www.jackkinsella.ie/]
+// Cucumber has its uses, principally as a high level analysis tool [...]. 
+// Cucumber, as used by the majority of Rails programmers, is no more than a clumsy wrapper over basic integration tests.
 
-[NOTE.speaker]
---
-* Dieses Zitat ist als aus vielen ausgewählt.
-* Zeigt wie schwer ist gute verständliche Tests zu schreiben.
---
+// [NOTE.speaker]
+// --
+// * Dieses Zitat ist als aus vielen ausgewählt.
+// * Zeigt wie schwer ist gute verständliche Tests zu schreiben.
+// --
 
 
 // === Why cucumber? 
@@ -104,9 +104,3 @@ Cucumber, as used by the majority of Rails programmers, is no more than a clumsy
 // "It's okay to lose to opponent, it's never okay to lose to fear."
 
 // Die perspective eines Juniors müssen wir bei dem was wir schaffen im auge behalten.. 
-
-
-[%notitle]
-=== Ready to start?
-
-

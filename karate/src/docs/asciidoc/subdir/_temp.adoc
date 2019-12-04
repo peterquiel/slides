@@ -1,19 +1,3 @@
-= Orange belt
-Orange belt represents that student has further opened up his mind and his skills are improving rapidly. Just like when sun rays turn orange give representation of growing strength of sun, orange belt also symbolizes improvement in individual’s skills.
-
-json xpath set get remove
-json matcher with xpath
-
-= Green belt
-Green belt represents that a very basic steps of karate learning have been accomplished successfully. Green belt is awarded to intermediate students who are refining their kills.
-
-Become a json master
-- load file and use set, remove aso.
-- match json, each, contains, contains not aso.
-- json xpath
-- json schema
-
-erwähnen,.. geht mit xml -> old school.
 
 = Blue Belt
 Blue belt represents further improvement and one level up. It is awarded to students who have started learning technical skills and additional knowledge about karate. Bluer color actually symbolizes that minds and bodies of students are continuously growing.
@@ -47,10 +31,11 @@ Just like the of ripening seed that is ready for harvest, the brown color in kar
 
 “Either you karate do “yes” or karate do “no.” You karate do “guess so,” (get squished) just like grape.”
 
-
-
 Calling features, filter for tags
+
 env config with karate-config.js
+Environment Specific Config
+
 Scenario Outlines, Examples
 
 Gatling,
@@ -85,14 +70,12 @@ Abschluss quote:
 [quote, Mr Miyagi]
 “Just remember, license never replace eye, ear, and brain.”
 
-// “Here are the 2 Rules of Peter Quiel Karate. Rule Number 1: ‘Karate for app quality only.’ Rule Number 2: ‘First learn rule number 1.’”
+//
 
 // "It's okay to lose to opponent, it's never okay to lose to fear."
 
 // Die perspective eines Juniors müssen wir bei dem was wir schaffen im auge behalten.. 
 
-
-“No such thing as bad student, only bad teacher. Teacher say, student do.” 
 
 “Never trust spiritual leader who cannot dance.” 
 “If come from inside you, always right one.” 
@@ -105,8 +88,7 @@ Abschluss quote:
 Daniel: I’m not by myself, I’m with you.
 Miyagi: To make honey, young bee need young flower…not old prune.”
 
-“Daniel: You think you could break a log like that?
-Miyagi: Don’t know. Never been attacked by a tree.”
+
 "Daniel-San, lie become truth only if person wanna believe it."
 
 
