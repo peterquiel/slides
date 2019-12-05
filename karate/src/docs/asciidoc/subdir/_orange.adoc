@@ -2,8 +2,7 @@
 ".. orange is representation of growing strength of sun, orange belt also symbolizes improvement in individual’s skills."
 
 [quote, Mr Miyagi]
-“Daniel: You think you could break a log like that?
-Miyagi: Don’t know. Never been attacked by a tree.”
+“Either you karate do “yes” or karate do “no.” You karate do “guess so,” (get squished) just like grape.”
 
 [NOTE.speaker]
 --

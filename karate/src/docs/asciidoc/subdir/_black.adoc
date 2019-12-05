@@ -1,0 +1,76 @@
+== Black Belt
+"Many people after receiving black belts are considered to be expertise in their domain and they start passing on their skills to others."
+
+[quote, Mr Miyagi]
+“Better learn balance. Balance is key. Balance good, karate good. Everything good. Balance bad, better pack up, go home. Understand?”
+
+=== Some best practices
+
+[.step, role="no-bullet"]
+* Avoid super-generic re-usable features that try to do too much
+* Avoid call, results in a dependency graph
+* Read larger JSONs from file
+* Avoid JS, put complicated logic into Java
+* Prefer match over assert
+* Try to make scenarios within a feature independent
+* Avoid `Thread.sleep` if at all possible. Use retry.
+* Use Given/When/Then within scenarios, and particularly use When with method
+
+=== This all could be done with XYZ..
+
+[.step, role="no-bullet"]
+* Clean code is difficult to write,.. and gets worse when changed
+* Maintainable trades of readability
+* All patterns that increases maintainable increase code navigation distance
+* Bad production code cannot be deleted, a bad and broken test can be.
+* Test code is more important than production code
+* Juniors have a hard time to read 500 lines Rest-Assured-Code
+
+=== last lesson
+
+[quote, Mr Miyagi]
+“Lesson not just karate only. Lesson for whole life. Whole life have a balance. Everything be better.”
+
+=== Things that didn't make it
+
+[.step, role="no-bullet"]
+* Environment specific setup
+* https://github.com/intuit/karate/tree/master/karate-gatling[Using Karate to drive gatling test]
+* https://github.com/intuit/karate/wiki/Distributed-Testing[Distributed testing]
+* Karate web socket testing with `karate.webSocket`
+* https://github.com/intuit/karate/tree/master/karate-netty#standalone-jar[Test doubles made simple with karate]
+* Karate in combination with test containers
+* Test Driven API Design...
+
+
+=== Road Map
+Stabilize web-UI automation, the goal: compete with Selenium and Cypress.
+
+Graal migration
+
+Improve generated documentation, support for better “inline” doc native steps
+
+Karate Roadmap: https://github.com/intuit/karate/projects/3
+
+=== Vision
+
+[.step]
+Become the best API testing tool
+
+[.step]
+Become the best test-automation tool
+
+
+=== Thank you for your patience!
+
+
+=== How to ask
+
+Stackoverflow - 1,375 questions has been answered
+
+https://github.com/intuit/karate[Karate Readme.md]  is a "complete" documentation
+
+
+
+
+

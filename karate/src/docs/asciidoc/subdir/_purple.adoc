@@ -1,0 +1,19 @@
+== Purple Belt
+".. is awarded to students who are converting into advanced stages of leaning phase."
+
+[quote, Mr Miyagi]
+“You trust the quality of what you know, not quantity.”
+
+
+[NOTE.speaker]
+--
+--
+
+
+=== next lesson
+
+link:vscode://file/{groovytest}/karate/purple.feature[karate/purple.feature]
+[source]
+----
+
+----

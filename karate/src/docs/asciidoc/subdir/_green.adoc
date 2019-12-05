@@ -13,3 +13,11 @@ link:vscode://file/{groovytest}/karate/green.feature[karate/green.feature]
 ----
 
 ----
+
+=== Matchers
+
+image::matchers.png[scaledwidth=140%]
+
+=== Schema Markers
+
+image::markers.png[scaledwidth=140%]

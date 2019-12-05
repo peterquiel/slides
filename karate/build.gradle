@@ -93,7 +93,6 @@ test {
 }
 
 sourceSets {
-
     test {
         resources {
             srcDirs = ['src/test/resources','src/test/groovy','src/test/scala']

@@ -1,60 +1,23 @@
 
-= Blue Belt
-Blue belt represents further improvement and one level up. It is awarded to students who have started learning technical skills and additional knowledge about karate. Bluer color actually symbolizes that minds and bodies of students are continuously growing.
 
-"If karate used proof app quality, karate mean something. If karate used cv driven development, karate no mean nothing."
-
-Doing Web API requests.
-
-request
-headers
-cookies
-headers
-responseHeaders
-response
-status verification
-multi part
-forms input fields
-
-
-= Purple Belt
-As purple represents the color of dawn so purple belt is awarded to students who are converting into advanced stages of leaning phase.
-
-“You trust the quality of what you know, not quantity.” .. deeper insights needed.
-
-java script and java integration
-
-How does java inter op work
 
 = Brown Belt
 Just like the of ripening seed that is ready for harvest, the brown color in karate belts represents that students skills are getting matured and he’s leveling up to higher expertise. So, brown belt is awarded to students whose techniques have begun to mature.
 
-“Either you karate do “yes” or karate do “no.” You karate do “guess so,” (get squished) just like grape.”
+
 
 Calling features, filter for tags
 
 env config with karate-config.js
 Environment Specific Config
 
-Scenario Outlines, Examples
-
 Gatling,
 Cucumber Reports
 JUnit Reports
 
-= Red Belt
-Just like red color represents hot strength of the sun, red karate belt also represents that students have gained more detailed knowledge and they are well aware in discipline of their skills. Red color also signifies danger, so student who gets awarded with red belt is considered to be more dangerous in his/her skills and knowledge.
-
-
-“Man who catch fly with chopstick, accomplish anything.” 
-
-Web Testing... selenium cool!
-
 = Black belt
-Black belt is awarded to students who seek to gain deeper and complete understanding of physical and mental teaching of karate. Many people after receiving black belts are considered to be expertise in their domain and they start passing on their skills to others.
 
-“Better learn balance. Balance is key. Balance good, karate good. Everything good. Balance bad, better pack up, go home. Understand?”
-“Never put passion in front of principle, even if you win, you’ll lose.” 
+
 
 Integration patterns
 Become a Tester that a deeper insight about consequences of using different tools.
@@ -65,7 +28,6 @@ WireMock aso.
 Betrachtung von Test Driven Api Design aso.
 
 Abschluss quote:
-“Lesson not just karate only. Lesson for whole life. Whole life have a balance. Everything be better.”
 
 [quote, Mr Miyagi]
 “Just remember, license never replace eye, ear, and brain.”
@@ -98,120 +60,7 @@ Daniel: Well, why didn’t you?
 Mr. Miyagi: Because Daniel, for man with no forgiveness in heart, life worse punishment than death.”
 
 
-
-
-
-
-
-
-
-
-
 ok maybe this should be a thread. so here goes:
 :+1:
 5
-
-
-Peter Thomas  vor 9 Monaten
-avoid JS as far as possible. if you have complex logic, try to move this into Java, it will be more maintainable / debuggable. this also reduces the risk of the JS engine compatibility in the future
-
-Peter Thomas  vor 9 Monaten
-avoid call as far as possible, except when it is used for common “set up” routines, typically in the Background
-
-Peter Thomas  vor 9 Monaten
-prefer match over assert
-
-Peter Thomas  vor 9 Monaten
-don’t use Java Beans unless you absolutely need to re-use some legacy code
-
-Peter Thomas  vor 9 Monaten
-when using print always use the comma delimited form, which ensures that JSON / XML is pretty printed
-
-Peter Thomas  vor 9 Monaten
-use the Runner suffix for your JUnit test helpers, not Test else you run the risk of running them in CI by mistake.
-
-Peter Thomas  vor 9 Monaten
-don’t have verbose package names karate.cats karate.dogs may be a good standard
-
-Peter Thomas  vor 9 Monaten
-I’m also proposing karate as the top level package, so it goes under src/test/java
-
-Peter Thomas  vor 9 Monaten
-and common classpath resources can go under src/test/java itself, maybe if a package is required it can be called common
-
-Peter Thomas  vor 9 Monaten
-I think it is time to encourage JUnit5
-
-Peter Thomas  vor 9 Monaten
-complex JSON should always be read from files
-
-Peter Thomas  vor 9 Monaten
-if you have a very dynamic JSON for a data-driven test, prefer the set via table form
-
-alxjns  vor 9 Monaten
-Thanks, @Peter Thomas  these are great. A few more I’ve got:
-* Scenarios MUST be independent
-* Avoid Thread.sleep if at all possible. Use retry.
-* Use Given/When/Then within scenarios, and particularly use When with method
-Wurde auch an den Channel gesendet
-
-Peter Thomas  vor 9 Monaten
-@alxjns yes ! absolutely agree, I missed these.
-everyone please feel free to add to this thread. I’m going to “pin” this for convenience
-:+1:
-1
-
-
-adrian  vor 9 Monaten
-Not sure if others will agree with this, but I don't like to set variables used in the main feature in a background feature.
-
-adrian  vor 9 Monaten
-I prefer to set these after the call line (bearbeitet) 
-
-Peter Thomas  vor 9 Monaten
-fair point. just for academic purposes - let me point you to how the extreme opposite - you can do a call in the karate-config.js and set up variables globally: https://github.com/intuit/karate/issues/673#issuecomment-461489752 (bearbeitet) 
-
-adrian  vor 9 Monaten
-I do like the idea of global variables, for the reason listed in that question.
-
-adrian  vor 9 Monaten
-If you have a common set that are used pretty much everywhere, I don't think the abstraction obscures them as much as variables that are less commonly used.
-:+1:
-1
-
-Wurde auch an den Channel gesendet
-
-Peter Thomas  vor 8 Monaten
-avoid super-generic re-usable features that try to do too much, here is a answer (rant) I’d like to save for posterity on stack-overflow: https://stackoverflow.com/a/54126724/143475
-
-Peter Thomas  vor 7 Monaten
-never use a JS for loop ever. use match each and get used to karate.map(), filter(), forEach() and repeat(). example: https://stackoverflow.com/a/55938480/143475 (bearbeitet) 
-Wurde auch an den Channel gesendet
-
-
-
-Peter Thomas  vor 5 Monaten
-cross posting to the main channel for those new who have not seen this thread on Best Practices:
-prefer using path instead of concatenating variables to build URL-s, and also note that there is no need to concatenate the / charater
-for example instead of
-When url BASE_URL + '/carts/' + cartId + '/payment'
-use:
-When url BASE_URL
-And path 'carts', cartId, 'payment'
-
-Peter Thomas  vor 5 Monaten
-when using stand-alone JS functions read from files, name the function something like fn to avoid that file being flagged as invalid / errored in your IDE, for e.g.
-function fn() { return {} }
-:+1:
-2
-
-
-Peter Thomas  vor 3 Monaten
-don’t use JSON.parse() it is not guaranteed to work in future versions of Karate. use Karate’s built-in type-conversion if you need to convert from a string
-
-Peter Thomas  vor 3 Monaten
-when you really need to match something in a loop, use a second feature file: https://stackoverflow.com/a/57907028/143475 (bearbeitet) 
-
-Peter Thomas  vor 3 Monaten
-in the same example above, creating a json-based lookup helps for matching responses which are dynamic: https://stackoverflow.com/a/57907028/143475 (bearbeitet
 

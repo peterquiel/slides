@@ -14,7 +14,8 @@ Peter Quiel <peter.quiel@gmail.com>
 include::{includedir}/click-mouse-navigation.adoc[]
 
 
-== Me
+[.notitle]
+== introduction
 
 [quote, Mr. Myagi]
 We make sacred pact. I promise teach karate to you, you promise learn. I say, you do, ask questions.
@@ -25,6 +26,9 @@ include::{includedir}/subdir/_white.adoc[]
 include::{includedir}/subdir/_yellow.adoc[]
 include::{includedir}/subdir/_orange.adoc[]
 include::{includedir}/subdir/_green.adoc[]
-
+include::{includedir}/subdir/_blue.adoc[]
+include::{includedir}/subdir/_purple.adoc[]
+include::{includedir}/subdir/_red.adoc[]
+include::{includedir}/subdir/_black.adoc[]
 
 include::{includedir}/footer.adoc[]

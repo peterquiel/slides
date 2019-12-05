@@ -16,9 +16,8 @@ include::{groovytest}/karate/white.feature[tags=structure,indent=0]
 
 [.step]
 * Add karate dependencies to your project - maven or gradle -> https://github.com/intuit/karate#quickstart[Quickstart]
-* or execute via stand alone - download from https://dl.bintray.com/ptrthomas/karate/[bintray]
 * Native integration into Intellij Idea via "cumcumber fake" - works out of the box
-* VS-Code extension 
+* VS-Code extension  
 ** Adds code lense on Feature and Scenarios
 ** Debug support 
 ** Syntax Highlighting - coming soon!

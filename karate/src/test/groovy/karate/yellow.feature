@@ -64,6 +64,21 @@ Feature: The yellow belt gives hope to a learner that he is actually learning an
 
 
 
+  Scenario: Multi line json
+    * def aVar = "content by a var"
+    * def multiLineJson =
+    """
+      { "category": "fiction",
+        "author": "J. R. R. Tolkien",
+        "title": "The Lord of the Rings",
+        "isbn": "0-395-19395-8",
+        "price": 22.99,
+        "injection": #(aVar)
+      }
+    """
+    * print multiLineJson
+
+
 
 
 

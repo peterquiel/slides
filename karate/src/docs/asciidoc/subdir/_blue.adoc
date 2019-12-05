@@ -1,0 +1,22 @@
+== Blue Belt
+".. awarded to students who have started learning technical skills and additional knowledge about karate."
+
+[quote, Mr Miyagi]
+If karate used to proof app quality, karate mean something.
+If karate used CV driven development, karate no mean nothing."
+
+
+[quote, Mr Miyagi]
+
+[NOTE.speaker]
+--
+--
+
+
+=== next lesson
+
+link:vscode://file/{groovytest}/karate/blue.feature[karate/blue.feature]
+[source]
+----
+
+----

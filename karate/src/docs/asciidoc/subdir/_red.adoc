@@ -1,0 +1,14 @@
+== Red Belt
+".. student who gets awarded with red belt is considered to be more dangerous in his/her skills and knowledge."
+
+[quote, Mr Miyagi]
+“Man who catch fly with chopstick, accomplish anything.”
+
+
+=== next lesson
+
+link:vscode://file/{groovytest}/karate/red.feature[karate/red.feature]
+[source]
+----
+
+----
