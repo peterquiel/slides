@@ -53,6 +53,8 @@ Feature: The blue belt awarded to students who have started learning technical s
     # And param query = "books"
     # or as form fields bc this is a get request
     * form field query = "books"
+    * param test = "test"
+    * params {}
 
     * cookie session = "my 345 session cookie"
     When method get

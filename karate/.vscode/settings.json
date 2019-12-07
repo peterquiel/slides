@@ -1,3 +1,5 @@
 {
-    "editor.mouseWheelZoom": true
+    "editor.mouseWheelZoom": true,
+    "karateRunner.karateCli.overrideKarateRunner": true,
+    "karateRunner.karateJar.commandLineArgs": "java -cp karate.jar:./build/classes/groovy:./bin/test:./build/resources/test com.intuit.karate.Main"
 }

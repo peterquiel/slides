@@ -43,7 +43,7 @@ image::tech-radar.png[scaledwidth=120%]
 --
 
 
-=== Karate, this isn't about material arts?
+=== Karate, this isn't about martial arts?
 
 [.step, role="no-bullet"]
 * In the days where computers were new..
@@ -62,45 +62,3 @@ image::tech-radar.png[scaledwidth=120%]
 [%notitle]
 === Karate Logo
 image::karate.png[scaledwidth=120%]
-
-
-// === BDD, Gherkin? How does this fit together?
-
-// [quote, Jack Kinsella, https://www.jackkinsella.ie/]
-// Cucumber has its uses, principally as a high level analysis tool [...]. 
-// Cucumber, as used by the majority of Rails programmers, is no more than a clumsy wrapper over basic integration tests.
-
-// [NOTE.speaker]
-// --
-// * Dieses Zitat ist als aus vielen ausgewählt.
-// * Zeigt wie schwer ist gute verständliche Tests zu schreiben.
-// --
-
-
-// === Why cucumber? 
-// [%step]
-// * Free IDE plug-ins
-// * Ready to use integration
-// * BDD-flavoured Given-When-Then syntax for free 
-// * Karate used CucumberJVM until 0.9
-
-
-// https://hackernoon.com/yes-karate-is-not-true-bdd-698bf4a9be39
-
-// why the name and the logo, 
-// how does it look like, 
-// is it BDD? Why not? 
-// What can it be used for? Web API, json, xml, Web
-// Common with cucumber?
-
-
-// Why another tool, why a dsl?
-
-// Motivation... shape the perspective. You can of cause use RestAssured or xyz to do this, but tests are fragile.. 
-// They need a careful design
-
-// “Here are the 2 Rules of Peter Quiel Karate. Rule Number 1: ‘Karate for app quality only.’ Rule Number 2: ‘First learn rule number 1.’”
-
-// "It's okay to lose to opponent, it's never okay to lose to fear."
-
-// Die perspective eines Juniors müssen wir bei dem was wir schaffen im auge behalten.. 

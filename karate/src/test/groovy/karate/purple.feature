@@ -31,7 +31,7 @@ Feature: The purple belt is awarded to students who are converting into advanced
    @bestMovie
    Scenario: Be called
    * def bestMovies = read("best-movies.csv")
-   * def bestMovies = karate.append(bestMovies, additionalMovie)
+   * def bestMovies = karate.append(bestMovies, karate.get("additionalMovie"));
     # the karate object offers different often needed functions..
     #  see https://github.com/intuit/karate#the-karate-object 
 
@@ -51,6 +51,7 @@ Feature: The purple belt is awarded to students who are converting into advanced
     * def bestMovies = read("best-movies.csv")
     * def bestMovies = util.addUuid(bestMovies)
     * match each bestMovies contains {id: "#uuid"}
+    * print bestMovies
 
 
 
