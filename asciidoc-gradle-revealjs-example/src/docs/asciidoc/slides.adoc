@@ -1,15 +1,16 @@
 :revnumber: {project-version}
 :example-caption!:
+:source-highlighter: highlightjs
+:revealjs_width: "90%"
 :imagesdir: {docdir}/src/docs/asciidoc/images
 :sourcedir: {docdir}/src/main/java
 :customcss: css/custom.css
+:revealjs_plugin_pdf: enabled
 
 = Example Deck
 Doc Writer <doc.writer@example.org>
 2019-05-07
 
-
-include::{includedir}/include-print-styles.adoc[]
 include::{includedir}/footer.adoc[]
 include::{includedir}/click-mouse-navigation.adoc[]
 
@@ -40,7 +41,7 @@ include::{sourcedir}/example/StringUtils.java[tags=contains,indent=0]
 
 This page was built by the following command:
 
- $ ./gradlew asciidoctor
+ $ ./gradlew asciidoctorRevealJs
 
 == Blank screen
 

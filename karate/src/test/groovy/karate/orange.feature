@@ -39,3 +39,6 @@ Feature: Orange is representation of growing strength of sun, orange belt also s
   #  * remove books $..[?(@.price > 20)]
    * remove books.store.book[3]
    * match books $..[?(@.price > 20)] == []
+
+   * def subscriber1 = { hello: 1234, goodbye: 'abc' }
+   * configure retry = { count: 3, interval: 3000 }
